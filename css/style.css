@@ -1,0 +1,10 @@
+body {}
+
+h1#title {
+    font-family: 'Skranji', cursive;
+}
+
+img {
+    width: 20%;
+    height: 20%;
+}
