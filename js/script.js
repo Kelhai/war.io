@@ -26,6 +26,9 @@ $(document).ready(function() {
     let order = ["Jack", "Queen", "King"];
     $("button#reset").on("click", reset);
     $("button#flip").on("click", function() {
+        //player1.push(player2.shift());
+        // uncomment all comments on this page to show if someone wins
+        //if (false) {
         let p1Raw = player1.shift();
         let p2Raw = player2.shift();
         let p1Val = Number(p1Raw.split('_')[1]);
@@ -43,15 +46,15 @@ $(document).ready(function() {
         } else {
             curStack.push(p1Raw, p2Raw);
         }
+        //}
 
         $("h2#1count").text(`Cards: ${player1.length}`);
         $("h2#2count").text(`Cards: ${player2.length}`);
 
         if (!(player1.length && player2.length)) {
-            console.log("here");
             $("h2#result").css("display", "inline");
             $("button#flip").attr("disabled", true);
-            $("h2#result").text(`Player ${player1.length ? "2" : "1"} Wins!`);
+            $("h2#result").text(`Player ${player1.length ? "1" : "2"} Wins!`);
         }
     });
 
