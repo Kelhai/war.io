@@ -21,26 +21,35 @@
 <body>
 
     <h1 class="text-center m-4 fw-bold display-1" id="title">WAR: the card game</h1>
-    <table class="table text-center">
+
+    <h2 class="text-center m-3 fw-semibold display-3" id="result"></h2>
+
+    <table class="table table-bordered text-center">
         <tr>
             <th>Player 1</th>
             <th>Player 2</th>
         </tr>
         <tr>
-            <td><img src="assets/back.gif" alt="Card"></td>
-            <td><img src="assets/back.gif" alt="Card"></td>
+            <td><img id="first" src="assets/back.gif" alt="Card"></td>
+            <td><img id="second" src="assets/back.gif" alt="Card"></td>
         </tr>
         <tr>
-            <td><h2 class="fw-bold">Cards: 26</h2></td>
-            <td><h2 class="fw-bold">Cards: 26</h2></td>
+            <td><h2 id="1count" class="fw-bold">Cards: 26</h2></td>
+            <td><h2 id="2count" class="fw-bold">Cards: 26</h2></td>
         </tr>
     </table>
 
-
-
-
-
-
+    <div class="row">
+        <div class="col-5"></div>
+        <button type="button" id="flip" class="btn btn-primary col-2 fs-2 my-5" aria="flip button">Flip</button>
+        <div class="col-5"></div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-5"></div>
+        <button type="button" id="reset" class="btn btn-primary col-2 fs-2 mt-5" aria="reset button">Reset</button>
+        <div class="col-5"></div>
+    </div>
 
     <script src="js/script.js"></script>
 
